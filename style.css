@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 * a {
@@ -50,11 +50,42 @@ nav .nav-links a {
   font-weight: bold;
   padding: 1rem 1rem;
   text-transform: uppercase;
-  transition: background, color 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 nav .nav-links a:hover {
   background: #fff;
+  color: #aa004f;
+}
+
+nav .search-form {
+  display: flex;
+  align-items: center;
+}
+
+nav .search-input,
+nav button {
+  border: none;
+  height: 1.5rem;
+}
+
+nav .search-input {
+  min-width: 200px;
+  height: 1.5rem;
+}
+
+nav button {
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  transition: all 500ms ease-in-out;
+}
+
+nav button:hover {
+  background: #fdfdfd;
   color: #aa004f;
 }
 
@@ -71,6 +102,12 @@ nav .nav-links a:hover {
 
   nav .nav-links a {
     font-weight: normal;
+  }
+}
+
+@media (max-width: 670px) {
+  nav .search-form {
+    display: none;
   }
 }
 
