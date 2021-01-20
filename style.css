@@ -24,12 +24,13 @@ nav .container {
   align-items: center;
   justify-content: space-between;
   width: 75%;
+  max-width: 1280px;
   margin: auto;
 }
 
 nav .logo {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.784rem;
   font-weight: 700;
   letter-spacing: 5px;
 }
@@ -53,4 +54,26 @@ nav .nav-links a {
 nav .nav-links a:hover {
   background: #fff;
   color: #aa004f;
+}
+
+@media (max-width: 850px) {
+  nav .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .logo {
+    font-size: 1.4rem;
+  }
+
+  nav .nav-links a {
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 340px) {
+  nav .nav-links li:first-child {
+    display: none;
+  }
 }
